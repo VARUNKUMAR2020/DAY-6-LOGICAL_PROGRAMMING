@@ -52,5 +52,20 @@ public class Logical_program
 
     		else
     			System.out.println(b +" is not a perfect number");
+    		
+    		  System.out.println(" ");
+    	      System.out.println(" ");
+    	      Scanner r = new Scanner(System.in);
+    		  System.out.println("Enter a number");
+    		  int num = r.nextInt();
+    		  int reverse = 0;
+    			int temp = num;
+    			while(temp>0)
+    			{
+    				int remaindar = temp % 10;
+    				reverse = reverse*10 + remaindar;
+    				temp=temp/10;
+    				System.out.println(reverse);
     }
+}
 }
