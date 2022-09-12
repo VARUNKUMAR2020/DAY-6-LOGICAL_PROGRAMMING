@@ -33,5 +33,24 @@ public class Logical_program
         int n = sc.nextInt();
         int term = Fibonacci(n);
         System.out.println(n+"th term is: "+ term);
+       
+        System.out.println(" ");
+        System.out.println(" ");
+        Scanner s = new Scanner(System.in);
+		System.out.println("Enter a number");
+		int b = s.nextInt();
+    		int sum=0;
+    		for(int i=1; i<b; i++) 
+    		{
+    			if(b%i == 0) {
+    				sum+=i;
+    			}
+    		}
+
+    		if(sum==b) 
+    			System.out.println(b +" is a perfect number");
+
+    		else
+    			System.out.println(b +" is not a perfect number");
     }
 }
